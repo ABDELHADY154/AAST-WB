@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --primary: #2699fb;
+  --secondary: #ea4335;
+}
+
+@media only screen and (min-width: 992px) {
+  .container-fluid {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .container {
+    width: 80em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .header {
+    background-color: var(--primary);
+    /* z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%; */
+  }
+  .header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80em;
+    height: 4.375em;
+    margin: 0 auto;
+  }
+  .header > nav > .logo {
+    flex-grow: 1;
+  }
+  .header > nav > .navLinks {
+    flex-grow: 1;
+  }
+  .header > nav > .navLinks > ul > li {
+    float: left;
+    font-size: 1.25em;
+    margin-right: 4rem;
+  }
+  .header > nav > .navLinks > ul > li > a {
+    clear: both;
+    text-decoration: none;
+    color: white;
+  }
+  .header > nav > .navLinks > ul > li > a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .header > nav > .navLinks > ul > li > a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  .header > nav > .navLinks > ul > li > .active {
+    color: white;
+    text-decoration: underline;
+  }
+  .header > nav > .search {
+    flex-grow: 0.1;
+  }
+  .header > nav > .search > button {
+    background-color: transparent;
+    border: none;
+  }
+}
