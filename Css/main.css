@@ -33,11 +33,22 @@
 }
 .header > nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 80em;
   height: 4.375em;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .header > nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
 }
 .header > nav > .logo {
   flex-grow: 1;
@@ -120,7 +131,8 @@
 .services-section {
   height: 33.875em;
 }
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px)  */
+@media (max-width: 1150px) {
   .services-section {
     display: flex;
     flex-flow: column wrap;
@@ -233,7 +245,8 @@
   height: 26.25em;
   background-color: var(--primary);
 }
-@media only screen and (max-width: 992px) {
+/* @media only screen and (min-width: 200px)  */
+@media (max-width: 1150px) {
   .appoinment-section {
     display: flex;
     flex-flow: column wrap;
