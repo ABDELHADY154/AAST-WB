@@ -322,3 +322,155 @@
   border: 2px solid var(--primary);
   border-radius: 1.5625em;
 }
+
+.testimonials-section {
+  height: 28.875em;
+}
+/* @media only screen and (max-width: 992px)  */
+@media (max-width: 1150px) {
+  .testimonials-section {
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+  }
+  @media (max-width: 750px) {
+    .testimonials-section > .container > .row > .left-arrow {
+      display: none;
+    }
+    .testimonials-section > .container > .row > .right-arrow {
+      display: none;
+    }
+  }
+}
+.testimonials-section > .container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials-section > .container > .row {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials-section > .container > h2 {
+  padding: 3rem 0;
+  font-size: 2.5em;
+  color: var(--primary);
+}
+
+.testimonials-section > .container > .row > .left-arrow {
+  flex-grow: 2;
+}
+
+.testimonials-section > .container > .row > .testimonial-content {
+  flex-grow: 8;
+  width: 20.5em;
+  color: #186aa5;
+}
+.testimonials-section > .container > .row > .testimonial-content > .user > h5 {
+  font-weight: bold;
+}
+.testimonials-section > .container > .row > .testimonial-content > p {
+  line-height: 4rem;
+}
+
+.testimonials-section > .container > .row > .right-arrow {
+  flex-grow: 2;
+}
+
+.subscription-section {
+  width: 100%;
+  background-color: var(--primary);
+}
+.subscription-section > .container {
+  height: 18.913125em;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-section > .container > .card {
+  background-color: white;
+  padding: 6em 11rem;
+  border-radius: 1.25rem;
+}
+.subscription-section > .container > .card > .card-header > h3 {
+  font-size: 1.875em;
+  color: var(--primary);
+  padding-bottom: 1rem;
+}
+::-webkit-input-placeholder {
+  color: var(--primary);
+}
+.subscription-section
+  > .container
+  > .card
+  > .card-body
+  > form
+  > input[type="email"] {
+  color: var(--primary);
+  height: 2.5em;
+  width: 21.25em;
+  padding: 0 1rem;
+
+  border: 1px solid var(--primary);
+  border-radius: 0.125rem;
+}
+.subscription-section
+  > .container
+  > .card
+  > .card-body
+  > form
+  > input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25em;
+}
+.subscription-section
+  > .container
+  > .card
+  > .card-body
+  > form
+  > input[type="submit"]:hover {
+  background-color: var(--secondary);
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25em;
+}
+@media (max-width: 1150px) {
+  .subscription-section {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: var(--primary);
+  }
+  .subscription-section > .container {
+    width: 100%;
+    min-height: 4rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscription-section > .container > .card {
+    width: 90%;
+    background-color: white;
+    padding: 2em 3rem;
+    border-radius: 1.25rem;
+  }
+}
