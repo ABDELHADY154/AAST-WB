@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Css/reset-min.css" />
-
+    <link
+      rel="icon"
+      href="../Images/clinic-logo.png"
+      type="image/gif"
+      sizes="16x16"
+    />
     <link rel="stylesheet" href="../Css/main.css" />
     <title>Plastic Clinic</title>
   </head>
@@ -51,16 +56,28 @@
         </div>
       </div>
       <div class="appointment-form">
-        <img src="../Images/appointment-banner.png" alt="" />
         <div class="container">
           <h2>Make an appointment</h2>
           <form action="#" method="POST">
-            <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Phone Number" />
-            <input type="email" name="email" placeholder="Email" />
-            <input type="text" name="city" placeholder="City" />
-            <input type="date" name="date" />
-            <input type="text" name="address" placeholder="Address" />
+            <div class="form-group">
+              <input type="text" placeholder="Full Name" />
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" />
+              <input type="text" name="city" placeholder="City" />
+            </div>
+            <div class="form-group">
+              <input type="date" name="date" />
+              <input type="text" name="address" placeholder="Address" />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Write your message here"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
             <input type="submit" name="submit" value="BOOK NOW" />
           </form>
         </div>
@@ -81,7 +98,7 @@
           </p>
         </div>
       </div>
-      <div class="subscription-section">
+      <div class="subscription-section" style="margin-top: 0">
         <div class="container">
           <div class="card">
             <div class="card-header">
@@ -89,7 +106,7 @@
             </div>
             <div class="card-body">
               <form action="#" method="POST">
-                <input type="text" placeholder="Enter Your Email" required />
+                <input type="email" placeholder="Enter Your Email" required />
                 <input type="submit" value="SEND" />
               </form>
             </div>
@@ -97,44 +114,41 @@
         </div>
       </div>
       <div class="footer">
-        <div class="container">
-          <nav>
-            <div class="logo">
-              <img src="../Images/clinic-logo.png" alt="plastic clinic logo" />
-            </div>
-            <div class="navLinks">
-              <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./appointment.html">Appointment</a></li>
-                <li><a href="./operations.html">Operations</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="social-icons">
-              <button>
-                <img
-                  src="../Images/insta-icon.png"
-                  alt="instagram icon"
-                /></button
-              ><button>
-                <img
-                  src="../Images/twitter-icon.png"
-                  alt="twitter icon"
-                /></button
-              ><button>
-                <img src="../Images/fb-icon.png" alt="facebook icon" />
-              </button>
-            </div>
-            <div class="scroll-up">
-              <button>
-                <img
-                  src="../Images/scroll-upp-arrow.png"
-                  alt="scroll up icon"
-                />
-              </button>
-            </div>
-          </nav>
+        <nav>
+          <div class="logo">
+            <img src="../Images/clinic-logo.png" alt="plastic clinic logo" />
+          </div>
+          <div class="navLinks">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./appointment.html">Appointment</a></li>
+              <li><a href="./operations.html">Operations</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="social">
+          <div class="social-icons">
+            <button>
+              <img
+                src="../Images/insta-icon.png"
+                alt="instagram icon"
+              /></button
+            ><button>
+              <img
+                src="../Images/twitter-icon.png"
+                alt="twitter icon"
+              /></button
+            ><button>
+              <img src="../Images/fb-icon.png" alt="facebook icon" />
+            </button>
+          </div>
+          <div class="scroll-up">
+            <button>
+              <img src="../Images/footer-arrow-up.png" alt="scroll up icon" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
