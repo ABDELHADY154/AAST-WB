@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../Images/clinic-logo.png"
+      type="image/gif"
+      sizes="16x16"
+    />
     <link rel="stylesheet" href="../Css/reset-min.css" />
     <link rel="stylesheet" href="../Css/main.css" />
     <title>Plastic Clinic</title>
@@ -35,12 +41,7 @@
       <div class="page-title">
         <h2>Operations</h2>
       </div>
-      <div class="operation-banner">
-        <img
-          src="../Images/operation-banner.png"
-          alt="operation page image that shows staff"
-        />
-      </div>
+      <div class="operation-banner"></div>
       <div class="operation-content">
         <div class="container">
           <div class="operation-content-title">
@@ -66,12 +67,7 @@
         <div class="container">
           <div class="row">
             <div class="card">
-              <div class="card-header">
-                <img
-                  src="../Images/card1-img.png"
-                  alt="body procedures image"
-                />
-              </div>
+              <div class="card-header-1"></div>
               <div class="card-body">
                 <h3>Body Procedures</h3>
                 <p>
@@ -81,16 +77,13 @@
                   suite of body contouring procedures to help you achieve the
                   sculpted shape you deserve
                 </p>
+              </div>
+              <div class="card-footer">
                 <button>READ MORE</button>
               </div>
             </div>
             <div class="card">
-              <div class="card-header">
-                <img
-                  src="../Images/card2-img.png"
-                  alt="body procedures image"
-                />
-              </div>
+              <div class="card-header-2"></div>
               <div class="card-body">
                 <h3>Facial Surgery</h3>
                 <p>
@@ -100,13 +93,15 @@
                   hands of time, facial plastic surgery can dramatically improve
                   the way you look and feel about yourself.
                 </p>
+              </div>
+              <div class="card-footer">
                 <button>READ MORE</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="subscription-section">
+      <div class="subscription-section" style="margin-top: 0">
         <div class="container">
           <div class="card">
             <div class="card-header">
@@ -114,7 +109,7 @@
             </div>
             <div class="card-body">
               <form action="#" method="POST">
-                <input type="text" placeholder="Enter Your Email" required />
+                <input type="email" placeholder="Enter Your Email" required />
                 <input type="submit" value="SEND" />
               </form>
             </div>
@@ -122,44 +117,41 @@
         </div>
       </div>
       <div class="footer">
-        <div class="container">
-          <nav>
-            <div class="logo">
-              <img src="../Images/clinic-logo.png" alt="plastic clinic logo" />
-            </div>
-            <div class="navLinks">
-              <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./appointment.html">Appointment</a></li>
-                <li><a href="./operations.html">Operations</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="social-icons">
-              <button>
-                <img
-                  src="../Images/insta-icon.png"
-                  alt="instagram icon"
-                /></button
-              ><button>
-                <img
-                  src="../Images/twitter-icon.png"
-                  alt="twitter icon"
-                /></button
-              ><button>
-                <img src="../Images/fb-icon.png" alt="facebook icon" />
-              </button>
-            </div>
-            <div class="scroll-up">
-              <button>
-                <img
-                  src="../Images/scroll-upp-arrow.png"
-                  alt="scroll up icon"
-                />
-              </button>
-            </div>
-          </nav>
+        <nav>
+          <div class="logo">
+            <img src="../Images/clinic-logo.png" alt="plastic clinic logo" />
+          </div>
+          <div class="navLinks">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./appointment.html">Appointment</a></li>
+              <li><a href="./operations.html">Operations</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="social">
+          <div class="social-icons">
+            <button>
+              <img
+                src="../Images/insta-icon.png"
+                alt="instagram icon"
+              /></button
+            ><button>
+              <img
+                src="../Images/twitter-icon.png"
+                alt="twitter icon"
+              /></button
+            ><button>
+              <img src="../Images/fb-icon.png" alt="facebook icon" />
+            </button>
+          </div>
+          <div class="scroll-up">
+            <button>
+              <img src="../Images/footer-arrow-up.png" alt="scroll up icon" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
