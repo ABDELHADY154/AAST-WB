@@ -1270,6 +1270,12 @@
   border: #73a1c2 1px solid;
   background-color: white;
   border-radius: 0.2rem;
+  width: auto;
+}
+@media only screen and (max-width: 1150px) {
+  .contact-us-form > .container > .row > .col > form > textarea {
+    width: auto;
+  }
 }
 .contact-us-form
   > .container
