@@ -1272,11 +1272,7 @@
   border-radius: 0.2rem;
   width: auto;
 }
-@media only screen and (max-width: 1150px) {
-  .contact-us-form > .container > .row > .col > form > textarea {
-    width: auto;
-  }
-}
+
 .contact-us-form
   > .container
   > .row
@@ -1296,6 +1292,27 @@
   border: none;
   margin-top: 1rem;
   border-radius: 1.5625em;
+}
+@media only screen and (max-width: 1150px) {
+  .contact-us-form > .container > .row > .col {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us-form > .container > .row > .col > form > textarea {
+    width: 80%;
+  }
+  .contact-us-form > .container > .row > .col > form {
+    margin-top: -3em;
+    width: 80%;
+  }
+  .contact-us-form > .container > .row > .col > form > input {
+    width: 80%;
+  }
+  .contact-us-form > .container > .row > .col > form > input[type="submit"] {
+    width: 80%;
+  }
 }
 .contact-us-form
   > .container
@@ -1407,7 +1424,7 @@
     > .col
     > .map
     > iframe {
-    width: 25.25em;
-    height: 25.25em;
+    width: 90%;
+    height: 23.25em;
   }
 }
