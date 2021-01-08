@@ -1148,3 +1148,198 @@
   color: var(--primary);
   border: 2px solid var(--primary);
 }
+.container-fluid > .contact-us-form {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-fluid > .contact-us-form > .container > .row {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-form > .container > .row > .col {
+  width: 50%;
+}
+@media only screen and (max-width: 1150px) {
+  .container-fluid > .contact-us-form > .container > .row {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us-form > .container > .row > .col {
+    width: 100%;
+  }
+}
+.contact-us-form > .container > .row > .col > form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-form > .container > .row > .col > form > input {
+  margin: 0.5rem;
+  width: 25.5625em;
+  height: 3.75em;
+  border: none;
+  border: #73a1c2 1px solid;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+.contact-us-form
+  > .container
+  > .row
+  > .col
+  > form
+  > input::-webkit-input-placeholder {
+  color: #73a1c2;
+  padding-left: 1rem;
+}
+.contact-us-form > .container > .row > .col > form > textarea {
+  margin: 0.5rem;
+  border: none;
+  border: #73a1c2 1px solid;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+.contact-us-form
+  > .container
+  > .row
+  > .col
+  > form
+  > textarea::-webkit-input-placeholder {
+  color: #73a1c2;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.contact-us-form > .container > .row > .col > form > input[type="submit"] {
+  width: 25.5625em;
+  height: 3em;
+  background-color: var(--primary);
+  font-weight: bold;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 1.5625em;
+}
+.contact-us-form
+  > .container
+  > .row
+  > .col
+  > form
+  > input[type="submit"]:hover {
+  background-color: white;
+  cursor: pointer;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 1.5625em;
+}
+
+.contact-us-form > .container > .row > .col > .about-clinic {
+  color: var(--primary);
+}
+.contact-us-form > .container > .row > .col > .about-clinic > p {
+  font-size: 1.25em;
+  line-height: 2.25em;
+}
+.contact-us-form > .container > .row > .col > .about-clinic > h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.contact-us-form > .container > .row > .col > .about-clinic > .social-icons {
+  margin-top: 1rem;
+}
+.contact-us-form
+  > .container
+  > .row
+  > .col
+  > .about-clinic
+  > .social-icons
+  > img {
+  margin: 1rem 1rem 1rem 0;
+}
+@media only screen and (max-width: 1150px) {
+  .contact-us-form > .container > .row > .col > .about-clinic {
+    margin: 2rem;
+    text-align: center;
+  }
+}
+.container-fluid > .clinic-address {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid > .clinic-address > .container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-fluid > .clinic-address > .container > .row {
+  margin: 5rem;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container-fluid > .clinic-address > .container > .row > .col {
+  width: 31.25em;
+}
+.container-fluid > .clinic-address > .container > .row > .col > .address {
+  color: var(--primary);
+}
+.container-fluid > .clinic-address > .container > .row > .col > .address > h2 {
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+}
+.container-fluid
+  > .clinic-address
+  > .container
+  > .row
+  > .col
+  > .address
+  > span {
+  font-size: 1.25em;
+  line-height: 2rem;
+}
+.container-fluid > .clinic-address > .container > .row > .col > .map {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid > .clinic-address > .container > .row > .col > .map > iframe {
+  width: 31.25em;
+  height: 31.25em;
+}
+@media only screen and (max-width: 1150px) {
+  .container-fluid > .clinic-address > .container > .row > .col > .address {
+    text-align: center;
+  }
+  .container-fluid > .clinic-address > .container > .row {
+    margin: 2rem;
+  }
+  .container-fluid
+    > .clinic-address
+    > .container
+    > .row
+    > .col
+    > .map
+    > iframe {
+    width: 25.25em;
+    height: 25.25em;
+  }
+}
