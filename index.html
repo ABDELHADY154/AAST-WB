@@ -11,6 +11,19 @@
     />
     <link rel="stylesheet" href="./Css/reset-min.css" />
     <link rel="stylesheet" href="./Css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script>
+      function navigate(page) {
+        var loc = window.location.pathname;
+        var dir = loc.substring(0, loc.lastIndexOf("/"));
+        var path = dir + page;
+        toString(path);
+        return (window.location.href = path);
+      }
+    </script>
     <title>Plastic Clinic</title>
   </head>
   <body>
@@ -42,7 +55,9 @@
         <div class="banner-content">
           <h2>Plastic Clinic</h2>
           <p>Shaping your dreams into reality.</p>
-          <button>BOOK NOW</button>
+          <button onclick="navigate('/pages/appointment.html')">
+            BOOK NOW
+          </button>
         </div>
       </div>
       <div class="services-section">
@@ -102,7 +117,9 @@
               <p>Welcome in Plastic Clinic</p>
             </div>
           </div>
-          <button>BOOK NOW</button>
+          <button onclick="navigate('/pages/appointment.html')">
+            BOOK NOW
+          </button>
         </div>
       </div>
       <div class="testimonials-section">
@@ -117,9 +134,9 @@
             </div>
             <div class="testimonial-content">
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero
+                When it comes to healthy living, exercise and nutrition go
+                hand-in-hand. However, it gets tricky to understand just how to
+                schedule your diet, foods, and snacks throughout the day.
               </p>
               <div class="user">
                 <img src="./Images/user-icon.png" alt="user icon" />

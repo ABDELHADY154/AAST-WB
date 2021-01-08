@@ -81,6 +81,19 @@
   background-color: transparent;
   border: none;
 }
+@media only screen and (max-width: 992px) {
+  .header > nav > .logo {
+    margin-top: 1rem;
+  }
+  .header > nav > .search {
+    display: none;
+  }
+
+  .header > nav > .navLinks > ul > li {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 .banner {
   background-image: url("../Images/banner.png");
@@ -500,10 +513,10 @@
 
 @media only screen and (max-width: 992px) {
   .footer > nav {
-    display: flex;
+    /* display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: auto;
   }
 }
@@ -573,7 +586,30 @@
   background-color: transparent;
   border: none;
 }
+@media only screen and (max-width: 992px) {
+  .footer > nav > .logo {
+    margin-top: 1rem;
+  }
+  .footer > nav > .search {
+    display: none;
+  }
 
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .footer > nav > .navLinks > ul > li {
+    width: 100%;
+    text-align: center;
+  }
+  .footer > .social > .scroll-up {
+    display: none;
+  }
+  .footer > .social > .social-icons {
+    margin-top: 1rem;
+  }
+}
 .container-fluid > .page-title {
   font-size: 2.5em;
   color: var(--secondary);
@@ -801,12 +837,11 @@
   height: 27.5625em;
   background-image: url("../Images/operation-banner.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: contain;
 }
 @media only screen and (max-width: 1150px) {
   .container-fluid > .operation-banner {
-    /* height: auto; */
     background-size: cover;
   }
 }
