@@ -487,6 +487,33 @@
     background-color: white;
     padding: 2em 3em;
     border-radius: 1.25rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscription-section > .container > .card > .card-body > form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscription-section
+    > .container
+    > .card
+    > .card-body
+    > form
+    > input[type="email"] {
+    width: 80%;
+  }
+
+  .subscription-section
+    > .container
+    > .card
+    > .card-body
+    > form
+    > input[type="submit"] {
+    margin-top: 1rem;
   }
 }
 
